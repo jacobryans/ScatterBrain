@@ -1,0 +1,99 @@
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+// Navbar/Header Styling
+.nav {
+    .row-setup(10rem);
+    .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.0rem;
+        :hover {
+            opacity: 100%;
+            transform: scale(1.025);
+            transition: 1s;
+            background-color: #e6ffe6;
+        }
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        :hover {
+            opacity: 100%;
+            transform: scale(1.025);
+            transition: 1s;
+            background-color: #e6ffe6;
+        }
+    }
+    .clear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :hover {
+            opacity: 100%;
+            transform: scale(1.025);
+            transition: 1s;
+            background-color: #e6ffe6;
+        }
+        img {
+            height: 64px;
+            width: 64px;
+            opacity: 85%;
+        }
+    }
+}
+    // Content-row styling
+.content-row {
+    .row-setup(20rem);
+    margin: 5% 0;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-radius: 5px;
+    padding: 5% 1.5%;
+    .deck-menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        border: 5px solid grey;
+        border-radius: 10px;
+        h2 {
+            border-radius: 0;
+        }
+        p {
+            border-radius: 0;
+        }
+    }
+    .deck-drop {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 5px dotted grey;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+    .deck-select {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        border: 5px solid grey;
+        border-radius: 10px;
+        .header {
+            font-size: 1.6rem;
+            padding-top: 10px;
+        }
+        .decks {
+            padding-top: 10px;
+            img {
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+}
+
