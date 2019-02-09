@@ -163,8 +163,11 @@ h5 {
   display: flex;
   justify-content: center;
 }
+.nav .logo img {
+  opacity: 0.75;
+}
 .nav .logo :hover {
-  opacity: 100%;
+  opacity: 1;
   transform: scale(1.025);
   transition: 1s;
   background-color: #e6ffe6;
@@ -175,7 +178,7 @@ h5 {
   align-items: center;
 }
 .nav .clear :hover {
-  opacity: 100%;
+  opacity: 1;
   transform: scale(1.025);
   transition: 1s;
   background-color: #e6ffe6;
@@ -183,7 +186,7 @@ h5 {
 .nav .clear img {
   height: 64px;
   width: 64px;
-  opacity: 85%;
+  opacity: 0.6;
 }
 .content-row {
   display: flex;
@@ -229,13 +232,21 @@ h5 {
   border-radius: 10px;
 }
 .content-row .deck-select .header {
+  border-radius: 0;
   font-size: 1.6rem;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .content-row .deck-select .decks {
-  padding-top: 10px;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content-row .deck-select .decks img {
   height: 64px;
   width: 64px;
+}
+.content-row .deck-select .decks img img:hover {
+  transform: translatey(10px);
+  transition: 1s;
 }
