@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title ScatterBrain
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', rel='stylesheet')
+  body.container
+    header.nav
+      .nav.clear
+        img(src='images/minimize-icon.png')
+      .nav.logo
+        img(src='images/logo.png')
+      .nav.user
+        h2 Hello, User
+    section.content-row
+      #dmenu.deck-menu
+        h2  Add a New Deck! 
+        p.deck-menu.customize  Customization 1 Slot 
+        // These will have dropdown menus we can read from.
+        p.deck-menu.customize  Customization 2 Slot 
+        p.deck-menu.customize  Customization 3 Slot 
+        p.deck-menu.customize  Customization 4 Slot 
+      #ddrop.deck-drop
+        h2  Drag and drop to load in deck from .json file 
+      #dselect.deck-select
+        .deck-select.header
+          h2  Deck Area 
+        .deck-select.decks
+          img(src='images/deck-icon.png', alt='deck')
+          img(src='images/deck-icon.png', alt='deck')
+          img(src='images/deck-icon.png', alt='deck')
+          block content
